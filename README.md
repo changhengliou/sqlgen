@@ -25,3 +25,10 @@ And then follow the instructions from the article.
 **You can find the binary files [here](https://github.com/qq52184962/sqlgen/releases).** 
 
 Or build your own, if you have golang sdk.
+
+## Usage
+`./sqlgen -h [host] -P [port] -p [password] -t [text_dir]`
+
+**Example**
+
+`./sqlgen -h localhost -P 3306 -p mypassword -t ./wikiextractor/text`
