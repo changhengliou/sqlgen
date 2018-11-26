@@ -1,0 +1,66 @@
+* {
+    font-family: "roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#article-container {
+    min-height: 400px;
+    margin: 12px auto ;
+}
+
+#article-container > ul {
+    min-height: inherit;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#article-container > ul:empty::after {
+    display: block;
+    width: inherit;
+    min-height: inherit;
+    text-align: center;
+    transform: translateY(50%);
+    content: attr(data-text);
+}
+
+li.article-preview {
+    list-style: none;
+}
+
+#article-container > ul.error:empty::after {
+    color: red;
+    font-size: 1.5rem;
+}
+
+ul.dropdown-wrap {
+    display: none;
+}
+ul.dropdown-wrap.show {
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    border-top: 0;
+}
+
+ul.dropdown-wrap > li.dropdown-list {
+    background: #fff;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul.dropdown-wrap > li.dropdown-list:hover {
+    background: #ddd;
+}
