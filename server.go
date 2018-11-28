@@ -176,11 +176,11 @@ func queryApiHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 const (
-	host         = "35.236.173.141"
+	host         = ""
 	port         = "3306"
-	defaultDb    = "demo"
-	password     = "michael@tw.ibm.com"
-	homeDir      = "/Users/changheng/Desktop/Go/src/github.com/qq52184962/sqlgen/"
+	defaultDb    = ""
+	password     = ""
+	homeDir      = "src/github.com/qq52184962/sqlgen/"
 	staticPrefix = "/static/"
 	staticDir    = "static"
 	apiPrefix    = "/api/v1/"
